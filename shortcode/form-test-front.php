@@ -8,7 +8,27 @@
 			<!-- Development shortcode -->
 
 		
-			<?php echo('<h1 class="color">Hello World2</h1>')?>
+			<div class="form-container">
+        		<form action="">
+            		<div class="input-section">
+                		<span>
+                    		<input type="text" placeholder="Name" autocomplete="new-password">
+                		</span>
+                		<span>
+                    		<input type="text" placeholder="Email" autocomplete="new-password">
+                		</span>
+            		</div>
+            		<div class="input-section">
+                		<span>
+                    		<input type="text" placeholder="Phone" autocomplete="new-password">
+                		</span>
+                		<span>
+                    		<input type="date" name="date" id="date" autocomplete="new-password">
+                		</span>
+            		</div>
+                		<button type="submit">Submit</button>
+        		</form>
+    		</div>
 
 		
 			<!-- Development shortcode -->

@@ -128,4 +128,5 @@ function owt_create_my_table()
 }
 
 
+// delite table deactivate plugin
 
