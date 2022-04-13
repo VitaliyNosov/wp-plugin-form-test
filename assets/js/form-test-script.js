@@ -1,7 +1,11 @@
-document.addEventListener("DOMContentLoaded", function() {
+(function($) {
 
-    console.log('Фронт');
+// Валидация формы
 
-});
+    console.log('Фронт2');
+
+// Валидация формы.
+
+})(jQuery);
 
 

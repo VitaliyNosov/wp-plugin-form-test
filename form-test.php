@@ -47,9 +47,24 @@ add_action('admin_menu','form_test_show_item');
 // The function of displaying the plugin page in the admin panel
 
 function form_test_content(){
-    echo '<div class="block">
-        <button class="button">block button</button>
-    </div>';
+    echo '
+    
+    <div class="content">
+        <div class="border">
+        <div class="info__text">
+            <span>This plugin collects data through a feedback form. All users can be seen in the table below :)</span>
+            </br>
+            <span>Click on the blue button and copy the shortcode. Paste it on the page, a form will appear.</span>
+        </div>
+        </div>
+            <div class="text">
+                <span>Copy shortcode:</span>
+            <div class="text__copy_link">[form-test-shortcode]</div>
+        </div>
+            <div class="copy__link_mess">Copied to clipboard</div>
+    </div>
+    
+    ';
     
 }
 
@@ -73,6 +88,8 @@ function form_test_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts','form_test_scripts' );
+
+
 
 // The function of connecting styles and scripts
 
@@ -125,6 +142,4 @@ function owt_create_my_table()
     return $wpdb->prefix . "mytable";
 }
 
-
-// delite table deactivate plugin
 

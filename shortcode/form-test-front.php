@@ -9,24 +9,24 @@
 
 		
 			<div class="form-container">
-        		<form action="">
+        		<form action="" method="post" name="contact_form" id="contact_form">
             		<div class="input-section">
                 		<span>
-                    		<input type="text" placeholder="Name" autocomplete="new-password">
+                    		<input type="text" name="name" placeholder="Name" autocomplete="new-password">
                 		</span>
                 		<span>
-                    		<input type="text" placeholder="Email" autocomplete="new-password">
+                    		<input type="email" name="email" placeholder="Email" autocomplete="new-password">
                 		</span>
             		</div>
             		<div class="input-section">
                 		<span>
-                    		<input type="text" placeholder="Phone" autocomplete="new-password">
+                    		<input type="text" name="phone" placeholder="Phone" autocomplete="new-password">
                 		</span>
                 		<span>
                     		<input type="date" name="date" id="date" autocomplete="new-password">
                 		</span>
             		</div>
-                		<button type="submit">Submit</button>
+                		<button type="submit" name="send" value="Submit">Submit</button>
         		</form>
     		</div>
 
