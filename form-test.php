@@ -65,6 +65,8 @@ function form_test_content(){
     </div>
     
     ';
+
+    echo('Хуй');
     
 }
 
@@ -141,5 +143,32 @@ function owt_create_my_table()
     global $wpdb;
     return $wpdb->prefix . "mytable";
 }
+
+
+// Отправка формы
+
+
+if(isset($_POST['submitbtm'])) {
+    $data = array(
+        'name' => $_POST['name'],
+        'email' => $_POST['email'],
+        'phone' => $_POST['phone'],
+        'date' => $_POST['date']
+    );
+    $table_name = $wpdb->prefix . "mytable";
+
+    $result = $wpdb->insert($table_name, $data, $format=NULL);
+
+    if($result==1) {
+        echo "<script>allert('Book Saved')</script>";
+    }else{
+        echo "<script>allert('Unable to Save')</script>";
+    }
+}
+			
+			
+
+
+
 
 

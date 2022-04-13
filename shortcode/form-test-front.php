@@ -9,7 +9,7 @@
 
 		
 			<div class="form-container">
-        		<form action="" method="post" name="contact_form" id="contact_form">
+        		<form role="form" method="post">
             		<div class="input-section">
                 		<span>
                     		<input type="text" name="name" placeholder="Name" autocomplete="new-password">
@@ -26,7 +26,7 @@
                     		<input type="date" name="date" id="date" autocomplete="new-password">
                 		</span>
             		</div>
-                		<button type="submit" name="send" value="Submit">Submit</button>
+                		<button type="submit" name="submitbtm" value="Submit">Submit</button>
         		</form>
     		</div>
 
