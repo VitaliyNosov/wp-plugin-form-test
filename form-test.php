@@ -160,9 +160,9 @@ if(isset($_POST['submitbtm'])) {
     $result = $wpdb->insert($table_name, $data, $format=NULL);
 
     if($result==1) {
-        echo "<script>allert('Book Saved')</script>";
+        echo "<script>alert('Book Saved')</script>";
     }else{
-        echo "<script>allert('Unable to Save')</script>";
+        echo "<script>alert('Unable to Save')</script>";
     }
 }
 			
