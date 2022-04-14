@@ -66,7 +66,8 @@ function form_test_content(){
     
     ';
 
-    echo('Хуй');
+    require_once( dirname(__FILE__) . '/admin-table.php');
+
     
 }
 
@@ -74,6 +75,7 @@ function form_test_content(){
 
 function plugin_register_assets(){
     wp_enqueue_style('form-test_styles', plugins_url('assets/css/plugin-style.css', __FILE__));
+    wp_enqueue_style('form-test_bootstrap', plugins_url('assets/css/bootstrap.min.css', __FILE__));
     wp_register_script('form-test_jquery', plugins_url('assets/js/jquery.min.js', __FILE__));
     wp_enqueue_script('form-test_scripts', plugins_url('assets/js/admin.js', __FILE__));
 }
