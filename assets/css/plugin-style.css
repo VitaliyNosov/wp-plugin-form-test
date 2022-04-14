@@ -163,9 +163,8 @@ input:required:valid, textarea:required:valid {
   background: #fff;
   -webkit-box-shadow: 1px 2px 30px 8px rgba(34, 60, 80, 0.2);
           box-shadow: 1px 2px 30px 8px rgba(34, 60, 80, 0.2);
-  padding: 30px 20px 30px 20px;
+  padding: 10px 20px 30px 20px;
   border-radius: 20px 20px 0px 20px;
-  margin: 40px;
 }
 
 .form-container form span {
@@ -244,5 +243,95 @@ input:required:valid, textarea:required:valid {
   .form-container form button {
     margin: 20px 0px 20px 0px;
   }
+  .button-close {
+    margin: 0px !important;
+  }
+}
+
+.button-form-body {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  -webkit-box-shadow: 1px 2px 30px 8px rgba(34, 60, 80, 0.2);
+          box-shadow: 1px 2px 30px 8px rgba(34, 60, 80, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
+}
+
+.button-form-body:hover {
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+}
+
+.button-form-body button {
+  border: none;
+  border: 1px solid #000;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button-form-body button:hover {
+  cursor: pointer;
+}
+
+.overlay {
+  margin: 0 auto !important;
+  position: absolute !important !important;
+  z-index: 1000 !important;
+  min-width: 100% !important;
+  height: 100vh !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+.form-body {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button-close {
+  text-align: end;
+  margin: 10px;
+  color: #000;
+}
+
+.button-close:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=plugin-style.css.map */

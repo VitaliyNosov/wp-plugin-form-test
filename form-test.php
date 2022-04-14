@@ -76,7 +76,7 @@ function form_test_content(){
 function plugin_register_assets(){
     wp_enqueue_style('form-test_styles', plugins_url('assets/css/plugin-style.css', __FILE__));
     wp_enqueue_style('form-test_bootstrap', plugins_url('assets/css/bootstrap.min.css', __FILE__));
-    wp_register_script('form-test_jquery', plugins_url('assets/js/jquery.min.js', __FILE__));
+    // wp_register_script('form-test_jquery', plugins_url('assets/js/jquery.min.js', __FILE__));
     wp_enqueue_script('form-test_scripts', plugins_url('assets/js/admin.js', __FILE__));
 }
 
@@ -87,8 +87,11 @@ add_action('admin_enqueue_scripts','plugin_register_assets');
 
 function form_test_scripts() {
 	wp_enqueue_style( 'style', plugins_url('assets/css/plugin-style.css', __FILE__));
-  	wp_enqueue_script( 'jquery', plugins_url('assets/js/jquery.min.js', __FILE__), array(), true );
+    wp_deregister_script('jquery');
+	wp_enqueue_script('jquery-front', plugins_url('assets/js/jquery.min.js', __FILE__));
+	wp_enqueue_script( 'jquery' );
     wp_enqueue_script('form-test_front', plugins_url('assets/js/form-test-script.js', __FILE__), array(), true);
+    wp_enqueue_style( 'load-fa', 'https://use.fontawesome.com/releases/v5.11.2/css/all.css' );
 }
 
 add_action( 'wp_enqueue_scripts','form_test_scripts' );
