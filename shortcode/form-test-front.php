@@ -9,21 +9,21 @@
 
 		
 			<div class="form-container">
-        		<form role="form" method="post">
+        		<form action="#" role="form" method="post" id="form-test">
             		<div class="input-section">
                 		<span>
-                    		<input type="text" name="name" placeholder="Name" autocomplete="new-password">
+                    		<input type="text" name="userName" required="required" placeholder="Name" autocomplete="new-password">
                 		</span>
                 		<span>
-                    		<input type="email" name="email" placeholder="Email" autocomplete="new-password">
+                    		<input type="email" name="userEmail" required="required" placeholder="Email" autocomplete="new-password">
                 		</span>
             		</div>
             		<div class="input-section">
                 		<span>
-                    		<input type="text" name="phone" placeholder="Phone" autocomplete="new-password">
+                    		<input type="text" name="userPhone" required="required" placeholder="Phone" autocomplete="new-password">
                 		</span>
                 		<span>
-                    		<input type="date" name="date" id="date" autocomplete="new-password">
+                    		<input type="date" name="userDate" required="required" id="date" autocomplete="new-password">
                 		</span>
             		</div>
                 		<button type="submit" name="submitbtm" value="Submit">Submit</button>

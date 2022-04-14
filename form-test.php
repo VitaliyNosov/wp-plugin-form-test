@@ -127,10 +127,10 @@ function mytable_activation_function()
     if ($wpdb->get_var("show tables like '" . owt_create_my_table() . "'") != owt_create_my_table()) {
 
         $mytable = 'CREATE TABLE `' . owt_create_my_table() . '` (
-                            `name` varchar(100) NOT NULL,
-                            `email` varchar(100) NOT NULL,
-                            `phone` varchar(100) NOT NULL,
-                            `date` varchar(100) NOT NULL
+                            `Name` varchar(100) NOT NULL,
+                            `Email` varchar(100) NOT NULL,
+                            `Phone` varchar(100) NOT NULL,
+                            `Date` varchar(100) NOT NULL
                           ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;';
 
         require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
@@ -149,27 +149,35 @@ function owt_create_my_table()
 
 // Отправка формы
 
+// add_action( 'wp_ajax_form_test', 'form_test' );
+// add_action( 'wp_ajax_form_test', 'form_test' );
+
+// function form_test() {
+
+// ajax form submit function:
 
 if(isset($_POST['submitbtm'])) {
+
     $data = array(
-        'name' => $_POST['name'],
-        'email' => $_POST['email'],
-        'phone' => $_POST['phone'],
-        'date' => $_POST['date']
+        'Name' => $_POST['userName'],
+        'Email' => $_POST['userEmail'],
+        'Phone' => $_POST['userPhone'],
+        'Date' => $_POST['userDate']
     );
     $table_name = $wpdb->prefix . "mytable";
 
     $result = $wpdb->insert($table_name, $data, $format=NULL);
 
-    if($result==1) {
-        echo "<script>alert('Book Saved')</script>";
-    }else{
-        echo "<script>alert('Unable to Save')</script>";
-    }
+    // if($result==1) {
+    //     echo "<script>alert('Book Saved')</script>";
+    // }else{
+    //     echo "<script>alert('Unable to Save')</script>";
+    // }
 }
+	
+// ajax form submit function.
 			
-			
-
+// }
 
 
 

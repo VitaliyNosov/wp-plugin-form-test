@@ -4,7 +4,9 @@
 
     // print_r($result);
 ?>
-    <div class="container">
+
+<div class="container">
+    
     <table class="table table-striped">
     
         <thead>
@@ -20,14 +22,14 @@
     <?php
     foreach ($result as $mytable) { ?>
         <tr>
-            <td><?php echo $mytable->name; ?></td>
-            <td><?php echo $mytable->email; ?></td>
-            <td><?php echo $mytable->phone; ?></td>
-            <td><?php echo $mytable->date; ?></td>
+            <td><?php echo $mytable->Name; ?></td>
+            <td><?php echo $mytable->Email; ?></td>
+            <td><?php echo $mytable->Phone; ?></td>
+            <td><?php echo $mytable->Date; ?></td>
         </tr>
     <?php } ?>
     
         </tbody>
-</table>
+    </table>
 
-    </div>
+</div>
