@@ -73,7 +73,11 @@ function form_test_content(){
 
 // Style and Script Registration Function
 
-function plugin_register_assets(){
+function plugin_register_assets( $hook ){
+    // if ( 'form-test.php' != $hook ) {
+    //     return;
+    // }
+
     wp_enqueue_style('form-test_styles', plugins_url('assets/css/plugin-style.css', __FILE__));
     wp_enqueue_style('form-test_bootstrap', plugins_url('assets/css/bootstrap.min.css', __FILE__));
     // wp_register_script('form-test_jquery', plugins_url('assets/js/jquery.min.js', __FILE__));
@@ -81,6 +85,7 @@ function plugin_register_assets(){
 }
 
 add_action('admin_enqueue_scripts','plugin_register_assets');
+
 
 
 // Connecting styles for display on the frontend
@@ -139,6 +144,8 @@ function mytable_activation_function()
         require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
         dbDelta($mytable);
     }
+
+
 }
 
 // returns table name
@@ -148,6 +155,15 @@ function owt_create_my_table()
     global $wpdb;
     return $wpdb->prefix . "mytable";
 }
+
+
+// add in footer button shortcode
+
+function your_function() {
+    // echo 'This is inserted at the bottom';
+echo do_shortcode( '[form-test-shortcode]' ); 
+}
+add_action( 'wp_footer', 'your_function' );
 
 
 // Отправка формы
