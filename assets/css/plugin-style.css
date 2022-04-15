@@ -353,4 +353,48 @@ input:required:valid, textarea:required:valid {
 .button-close:hover {
   cursor: pointer;
 }
+
+.form-submit-popup {
+  max-width: 300px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  z-index: 100;
+  background: #63BD2E;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+.form-submit-error {
+  max-width: 300px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  z-index: 100;
+  background: #CE0000;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 5px;
+}
 /*# sourceMappingURL=plugin-style.css.map */

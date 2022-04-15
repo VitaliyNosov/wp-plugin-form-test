@@ -4,6 +4,20 @@ $(document).ready(function () {
 
     console.log('Фронт2');
 
+    // submit popup form 
+
+    $('.form-submit-popup').fadeIn(400);
+      setTimeout(function(){
+    $('.form-submit-popup').fadeOut(400);
+      },5000);
+
+  // submit popup error
+
+  $('.form-submit-error').fadeIn(400);
+    setTimeout(function(){
+  $('.form-submit-error').fadeOut(400);
+    },5000);
+
     // form popup
 
     $('.js-button-campaign').click(function () {

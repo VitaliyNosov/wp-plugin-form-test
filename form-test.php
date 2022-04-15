@@ -166,11 +166,15 @@ if(isset($_POST['submitbtm'])) {
 
     $result = $wpdb->insert($table_name, $data, $format=NULL);
 
-    // if($result==1) {
-    //     echo "<script>alert('Book Saved')</script>";
-    // }else{
-    //     echo "<script>alert('Unable to Save')</script>";
-    // }
+    if($result==1) {
+        echo '<div class="form-submit-popup">
+                <span>data sent successfully</span>
+            </div>';
+    }else{
+        echo '<div class="form-submit-error">
+                <span>an error has occurred</span>
+            </div>';
+    }
 }
 	
 // ajax form submit function.
