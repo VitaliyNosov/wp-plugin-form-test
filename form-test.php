@@ -47,44 +47,23 @@ add_action('admin_menu','form_test_show_item');
 // The function of displaying the plugin page in the admin panel
 
 function form_test_content(){
-    echo '
-    
-    <div class="content">
-        <div class="border">
-        <div class="info__text">
-            <span>This plugin collects data through a feedback form. All users can be seen in the table below :)</span>
-            </br>
-            <span>Click on the blue button and copy the shortcode. Paste it on the page, a form will appear.</span>
-        </div>
-        </div>
-            <div class="text">
-                <span>Copy shortcode:</span>
-            <div class="text__copy_link">[form-test-shortcode]</div>
-        </div>
-            <div class="copy__link_mess">Copied to clipboard</div>
-    </div>
-    
-    ';
 
+    require_once( dirname(__FILE__) . '/admin-plugin-info.php');
     require_once( dirname(__FILE__) . '/admin-table.php');
-
-    
+ 
 }
 
 // Style and Script Registration Function
 
 function plugin_register_assets( $hook ){
-    // if ( 'form-test.php' != $hook ) {
-    //     return;
-    // }
 
     wp_enqueue_style('form-test_styles', plugins_url('assets/css/plugin-style.css', __FILE__));
-    wp_enqueue_style('form-test_bootstrap', plugins_url('assets/css/bootstrap.min.css', __FILE__));
-    // wp_register_script('form-test_jquery', plugins_url('assets/js/jquery.min.js', __FILE__));
     wp_enqueue_script('form-test_scripts', plugins_url('assets/js/admin.js', __FILE__));
+    wp_enqueue_style( 'load-fa', 'https://use.fontawesome.com/releases/v5.11.2/css/all.css' );
 }
 
 add_action('admin_enqueue_scripts','plugin_register_assets');
+
 
 
 
