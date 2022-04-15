@@ -57,6 +57,9 @@
                </a>
             </div>
         </div>
+            <p>
+                Developer: <span>Vitaliy Nosov</span>
+            </p>
     </div>
 
 </div>
