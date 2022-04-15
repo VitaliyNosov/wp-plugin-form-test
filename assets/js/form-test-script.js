@@ -11,12 +11,12 @@ $(document).ready(function () {
     $('.form-submit-popup').fadeOut(400);
       },5000);
 
-  // submit popup error
+    // submit popup error
 
-  $('.form-submit-error').fadeIn(400);
-    setTimeout(function(){
-  $('.form-submit-error').fadeOut(400);
-    },5000);
+    $('.form-submit-error').fadeIn(400);
+      setTimeout(function(){
+    $('.form-submit-error').fadeOut(400);
+      },5000);
 
     // form popup
 

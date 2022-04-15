@@ -207,6 +207,8 @@ input:required:valid, textarea:required:valid {
   max-width: 250px;
   height: 100%;
   outline: none;
+  font-family: 'Arial' !important;
+  font-size: 14px !important;
 }
 
 .form-container form input:hover {
@@ -215,20 +217,24 @@ input:required:valid, textarea:required:valid {
 
 .form-container form button {
   margin: 10px;
-  background: #000;
-  color: #fff;
+  background: #000 !important;
+  color: #fff !important;
   border: none;
   border: 1px solid #000;
   padding: 8px 25px 8px 25px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  font-family: 'Arial' !important;
+  font-size: 14px !important;
+  font-weight: normal !important;
+  text-transform: capitalize !important;
 }
 
 .form-container form button:hover {
   cursor: pointer;
-  background: none;
-  color: #000;
-  text-decoration: none;
+  background: none  !important;
+  color: #000 !important;
+  text-decoration: none !important;
 }
 
 .input-section {
@@ -266,55 +272,60 @@ input:required:valid, textarea:required:valid {
 }
 
 .button-form-body {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #fff;
-  -webkit-box-shadow: 1px 2px 30px 8px rgba(34, 60, 80, 0.2);
-          box-shadow: 1px 2px 30px 8px rgba(34, 60, 80, 0.2);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  position: absolute;
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 50% !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  background-color: #fff !important;
+  -webkit-box-shadow: 1px 2px 30px 8px rgba(34, 60, 80, 0.2) !important;
+          box-shadow: 1px 2px 30px 8px rgba(34, 60, 80, 0.2) !important;
+  -webkit-transition: 0.3s !important;
+  transition: 0.3s !important;
+  position: absolute !important;
   right: 2% !important;
   bottom: 6% !important;
-  position: fixed;
-  z-index: 100;
+  position: fixed !important;
+  z-index: 100 !important;
 }
 
 .button-form-body:hover {
-  cursor: pointer;
-  background-color: #000;
-  color: #fff;
+  cursor: pointer !important;
+  border: none !important;
 }
 
 .button-form-body button {
-  border: none;
-  border: 1px solid #000;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  border: none !important;
+  border: 1px solid #000 !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  background-color: #fff !important;
 }
 
 .button-form-body button:hover {
-  cursor: pointer;
+  cursor: pointer !important;
+  border: none !important;
+}
+
+.button-form-body button i {
+  color: #000 !important;
 }
 
 .overlay {
@@ -356,7 +367,7 @@ input:required:valid, textarea:required:valid {
 
 .form-submit-popup {
   max-width: 300px;
-  padding: 10px;
+  padding: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -372,13 +383,13 @@ input:required:valid, textarea:required:valid {
   z-index: 100;
   background: #63BD2E;
   color: #fff;
-  font-size: 12px;
+  font-size: 14px;
   border-radius: 5px;
 }
 
 .form-submit-error {
   max-width: 300px;
-  padding: 10px;
+  padding: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -394,7 +405,7 @@ input:required:valid, textarea:required:valid {
   z-index: 100;
   background: #CE0000;
   color: #fff;
-  font-size: 12px;
+  font-size: 14px;
   border-radius: 5px;
 }
 /*# sourceMappingURL=plugin-style.css.map */
