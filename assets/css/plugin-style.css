@@ -394,8 +394,8 @@ input:required:valid, textarea:required:valid {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   border-radius: 40px;
   padding: 10px;
   border: none;
@@ -410,7 +410,7 @@ input:required:valid, textarea:required:valid {
   z-index: 1000;
   color: #fff;
   text-decoration: none !important;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .pulse-button:hover .pulse-button__icon {
