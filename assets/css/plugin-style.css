@@ -432,9 +432,10 @@ input:required:valid, textarea:required:valid {
 .pulse-button__text {
   display: block;
   width: 100%;
-  height: 20px;
+  height: 10px;
   font-family: 'Arial' !important;
   font-size: 10px !important;
+  text-transform: capitalize !important;
   color: #fff;
   text-align: center !important;
   line-height: 1.2 !important;

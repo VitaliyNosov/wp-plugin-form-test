@@ -42,7 +42,7 @@
 					<i class="fas fa-paper-plane"></i>
     			</span>
     			<span class="pulse-button__text">      				
-					Request a call
+					Send
     			</span>
     			<span class="pulse-button__rings"></span>
     			<span class="pulse-button__rings"></span>
