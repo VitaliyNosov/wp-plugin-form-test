@@ -379,7 +379,7 @@ input:required:valid, textarea:required:valid {
           align-items: center;
   position: absolute;
   top: 10%;
-  left: 50%;
+  left: 45%;
   z-index: 100;
   background: #63BD2E;
   color: #fff;
@@ -401,11 +401,183 @@ input:required:valid, textarea:required:valid {
           align-items: center;
   position: absolute;
   bottom: 10%;
-  left: 50%;
+  left: 45%;
   z-index: 100;
   background: #CE0000;
   color: #fff;
   font-size: 14px;
   border-radius: 5px;
+}
+
+.pulse-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 40px;
+  padding: 10px;
+  border: none;
+  background: #000 !important;
+  -webkit-box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+  outline: none;
+  z-index: 1000;
+  color: #fff;
+  text-decoration: none !important;
+  font-size: 22px;
+}
+
+.pulse-button:hover .pulse-button__icon {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.pulse-button:hover .pulse-button__text {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+}
+
+.pulse-button__text {
+  display: block;
+  width: 100%;
+  height: 20px;
+  font-family: 'Arial' !important;
+  font-size: 10px !important;
+  color: #fff;
+  text-align: center !important;
+  line-height: 1.2 !important;
+  text-decoration: none !important;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-top: 1px;
+}
+
+.pulse-button__rings {
+  border: 1px solid #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: auto;
+  width: auto;
+  border-radius: 50%;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: pulse_1;
+          animation-name: pulse_1;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  z-index: -1;
+}
+
+.pulse-button__rings:nth-child(2) {
+  -webkit-animation-name: pulse_2;
+          animation-name: pulse_2;
+}
+
+.pulse-button__rings:nth-child(3) {
+  -webkit-animation-name: pulse_3;
+          animation-name: pulse_3;
+}
+
+@-webkit-keyframes pulse_1 {
+  from {
+    opacity: 1;
+    -webkit-transform: scale(0.9, 0.9);
+            transform: scale(0.9, 0.9);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: scale(1.3, 1.3);
+            transform: scale(1.3, 1.3);
+  }
+}
+
+@keyframes pulse_1 {
+  from {
+    opacity: 1;
+    -webkit-transform: scale(0.9, 0.9);
+            transform: scale(0.9, 0.9);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: scale(1.3, 1.3);
+            transform: scale(1.3, 1.3);
+  }
+}
+
+@-webkit-keyframes pulse_2 {
+  from {
+    opacity: 1;
+    -webkit-transform: scale(0.8, 0.8);
+            transform: scale(0.8, 0.8);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
+  }
+}
+
+@keyframes pulse_2 {
+  from {
+    opacity: 1;
+    -webkit-transform: scale(0.8, 0.8);
+            transform: scale(0.8, 0.8);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
+  }
+}
+
+@-webkit-keyframes pulse_3 {
+  from {
+    opacity: 1;
+    -webkit-transform: scale(0.8, 0.8);
+            transform: scale(0.8, 0.8);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: scale(1.7, 1.7);
+            transform: scale(1.7, 1.7);
+  }
+}
+
+@keyframes pulse_3 {
+  from {
+    opacity: 1;
+    -webkit-transform: scale(0.8, 0.8);
+            transform: scale(0.8, 0.8);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: scale(1.7, 1.7);
+            transform: scale(1.7, 1.7);
+  }
 }
 /*# sourceMappingURL=plugin-style.css.map */

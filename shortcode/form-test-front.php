@@ -37,11 +37,17 @@
 		</div>
 			<!-- button form: -->
 
-			<div class="button-form-body">
-				<button class="button-popup-form animated-btn js-button-campaign" id="button-popup-form" href="#form">
+			<button class="pulse-button js-button-campaign" id="button-popup-form" href="#form" >
+    			<span class="pulse-button__icon">
 					<i class="fas fa-paper-plane"></i>
-				</button>
-			</div>
+    			</span>
+    			<span class="pulse-button__text">      				
+					Request a call
+    			</span>
+    			<span class="pulse-button__rings"></span>
+    			<span class="pulse-button__rings"></span>
+    			<span class="pulse-button__rings"></span>
+  			</button>
 
 			<!-- button form. -->
 
