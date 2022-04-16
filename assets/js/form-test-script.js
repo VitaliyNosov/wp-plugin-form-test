@@ -6,16 +6,16 @@ $(document).ready(function () {
 
     // submit popup form 
 
-    $('.form-submit-popup').fadeIn(400);
+    $('.form-submit-popup').fadeIn(800);
       setTimeout(function(){
-    $('.form-submit-popup').fadeOut(400);
+    $('.form-submit-popup').fadeOut(800);
       },5000);
 
     // submit popup error
 
-    $('.form-submit-error').fadeIn(400);
+    $('.form-submit-error').fadeIn(800);
       setTimeout(function(){
-    $('.form-submit-error').fadeOut(400);
+    $('.form-submit-error').fadeOut(800);
       },5000);
 
     // form popup
@@ -41,6 +41,20 @@ $(document).ready(function () {
     
         }
       })
+
+    // form ajax submit
+
+    // $('#form-test').on('submit', function(e){
+    //     e.preventDefault();
+    //     // alert('asd');
+    //     var $form = $(this);
+    //     $.post($form.attr('action'), $form.serialize(), function(data) {
+          
+    //     //   $(".testr-btn7").after("<p>Отправлено!</p>");
+    //     }, 'json');
+    
+    //   });
+
 
 
 

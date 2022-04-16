@@ -350,7 +350,7 @@ input:required:valid, textarea:required:valid {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
+  position: fixed;
   top: 10%;
   left: 45%;
   z-index: 100;
@@ -358,6 +358,9 @@ input:required:valid, textarea:required:valid {
   color: #fff;
   font-size: 14px;
   border-radius: 5px;
+  display: none;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 15px;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 15px;
 }
 
 .form-submit-error {
@@ -372,7 +375,7 @@ input:required:valid, textarea:required:valid {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
+  position: fixed;
   bottom: 10%;
   left: 45%;
   z-index: 100;
@@ -380,6 +383,9 @@ input:required:valid, textarea:required:valid {
   color: #fff;
   font-size: 14px;
   border-radius: 5px;
+  display: none;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 15px;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 15px;
 }
 
 .pulse-button {

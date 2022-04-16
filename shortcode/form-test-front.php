@@ -10,7 +10,7 @@
 		<div class="overlay js-overlay-campaign">
 			<div class="form-body">
 			<div class="form-container popup js-popup-campaign">
-        		<form action="#" role="form" method="post" id="form-test">
+        		<form action="" role="form" method="post" id="form-test">
 					<div class="button-close js-close-campaign">
 						<i class="far fa-window-close"></i>
 					</div>
