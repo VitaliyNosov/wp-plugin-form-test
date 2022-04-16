@@ -301,33 +301,6 @@ input:required:valid, textarea:required:valid {
   border: none !important;
 }
 
-.button-form-body button {
-  border: none !important;
-  border: 1px solid #000 !important;
-  width: 40px !important;
-  height: 40px !important;
-  border-radius: 50% !important;
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -webkit-box-pack: center !important;
-      -ms-flex-pack: center !important;
-          justify-content: center !important;
-  -webkit-box-align: center !important;
-      -ms-flex-align: center !important;
-          align-items: center !important;
-  background-color: #fff !important;
-}
-
-.button-form-body button:hover {
-  cursor: pointer !important;
-  border: none !important;
-}
-
-.button-form-body button i {
-  color: #000 !important;
-}
-
 .overlay {
   margin: 0 auto !important;
   position: absolute !important !important;
